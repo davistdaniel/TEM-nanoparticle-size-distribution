@@ -30,7 +30,9 @@ def get_tem_scale(img_path,y1=None,y2=None,x1=None,x2=None, threshold_type = cv2
     
     '''
     This function takes in an image and tries to find the scale by measuring the line segment usually given at the bottom left 
-    if the TEM micrograph. It approximates a rectangle for this and reports the width of rectangle as the scale.
+    if the TEM micrograph. It approximates a rectangle for this and reports the width of rectangle as the scale. 
+
+    Adjust the crop paramters x1,x2,y1 and y2 to fit the scale within the cropped area.
     
     Parameters:
     img_path :  Path of the TEM image.
